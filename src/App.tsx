@@ -1,25 +1,9 @@
 import React from 'react';
 import './App.scss';
+import RouteSetup from './routes';
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <h2>EasyShop</h2>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
-}
+const App: React.FC = (): JSX.Element => {
+    return <RouteSetup />;
+};
 
 export default App;
