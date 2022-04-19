@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     return (
         <div className="header">
             <div className="container">
-                <div className="logo">
+                <div className="logo-wrapper">
                     <Logo />
                 </div>
                 <div className="search-bar">

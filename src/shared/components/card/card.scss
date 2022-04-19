@@ -1,0 +1,51 @@
+.card {
+    .name {
+        margin-bottom: 8px;
+        margin-top: 0px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: left;
+        color: #373F50;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .price-wrapper {
+        display: flex;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 4px;
+
+        .price {
+            padding-right: 8px;
+            font-weight: 600;
+            color: #D23F57;
+        }
+
+        .price-discount {
+            text-decoration: line-through;
+            color: #7D879C;
+            font-weight: 600;
+        }
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+
+        .label {
+            line-height: 1.5;
+            text-transform: none;
+            white-space: normal;
+            color: rgb(125, 135, 156);
+        }
+    }
+
+    .link-wrapper {
+        margin: 0 8px 8px;
+    }
+}

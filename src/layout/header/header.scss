@@ -3,6 +3,7 @@
     z-index: 1;
     height: 80px;
     background: #fff;
+    box-shadow: rgba(43, 52, 69, 0.1) 0px 4px 16px;
 
     .container {
         max-width: 1280px;
@@ -17,7 +18,7 @@
         justify-content: space-between;
         height: 100%;
 
-        .logo {
+        .logo-wrapper {
             align-items: center;
             margin-right: 1rem;
             min-width: 90px;
@@ -29,5 +30,22 @@
             flex: 1 1 0;
             max-width: 670px;
         }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        height: 160px;
+
+        .container {
+            flex-direction: column;
+
+            .logo-wrapper {
+                justify-content: center;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        
     }
 }
