@@ -1,6 +1,15 @@
 .logo {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.5;
-    color: #2b3445;
+    color: #0e3460 !important;
+    text-align: center;
+
+    >.link {
+        text-decoration: none;
+
+        &:visited {
+            color: #0e3460;
+        }
+    }
 }
