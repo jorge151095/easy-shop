@@ -5,13 +5,12 @@ phases:
         commands:
             #installs dependencies into the node_modules/ directory
             - n latest
-            - npm install --global yarn
-            - yarn install
+            - npm install
     build:
         commands:
             - echo Build started on `date`
             - echo Compiling
-            - yarn build
+            - npm run build
     post_build:
         commands:
             - cd build; zip -r ../package.zip *
