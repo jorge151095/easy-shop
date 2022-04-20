@@ -5,6 +5,7 @@ phases:
         commands:
             #installs dependencies into the node_modules/ directory
             - n latest
+            - npm install --global yarn
             - yarn install
     build:
         commands:
