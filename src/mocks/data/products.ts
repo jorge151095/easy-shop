@@ -235,7 +235,7 @@ const productsMock: Product[] = [
         rating: 4.8,
         discount: 17,
         priceDiscount: 999,
-        link: 'https://amzn.to/38iYkOW',
+        link: 'https://amzn.to/3KcssZH',
     },
     {
         id: 'eb781108-bf7f-11ec-9d64-0242ac120002',
