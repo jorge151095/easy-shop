@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Button } from '@mui/material';
 import { Product } from '../../models';
 import Info from './info';
 import { productsMock } from './../../mocks/data/products';
@@ -14,13 +16,31 @@ const Home: React.FC = () => {
     }, [searchParams]);
 
     const getData = () => {
-        const id = searchParams.get("id");
-        setProduct(productsMock.find(product => product.id === id));
-    }
+        const id = searchParams.get('id');
+        setProduct(productsMock.find((product) => product.id === id));
+    };
 
-    return <div className='product-wrapper'>
-        <Info product={product} />
-    </div>;
+    return (
+        <div className="product-wrapper">
+            <Button
+                sx={{
+                    backgroundColor: '#d23f57',
+                    color: '#fff',
+                    border: 'none',
+                    '&:hover': {
+                        backgroundColor: '#d23f57',
+                        border: 'none',
+                    },
+                }}
+                variant="outlined"
+                startIcon={<ArrowBackIcon />}
+                href="/"
+            >
+                Regresar
+            </Button>
+            <Info product={product} />
+        </div>
+    );
 };
 
 export default Home;

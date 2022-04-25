@@ -6,7 +6,7 @@
         font-weight: 600;
         line-height: 1.5;
         text-align: left;
-        color: #373F50;
+        color: #373f50;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -21,12 +21,13 @@
         .price {
             padding-right: 8px;
             font-weight: 600;
-            color: #D23F57;
+            font-size: 16px;
+            color: #d23f57;
         }
 
         .price-discount {
             text-decoration: line-through;
-            color: #7D879C;
+            color: #7d879c;
             font-weight: 600;
         }
     }

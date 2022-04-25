@@ -10,7 +10,7 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 2rem;
-        
+
         .container {
             max-width: 100%;
 
@@ -34,11 +34,26 @@
         }
 
         .price-wrapper {
-            font-size: 25px;
+            display: flex;
+            font-size: 18px;
             font-weight: 700;
             line-height: 1;
             color: rgb(210, 63, 87);
             margin-bottom: 0.3rem;
+
+            .price {
+                padding-right: 8px;
+                font-weight: 600;
+                font-size: 25px;
+                color: #d23f57;
+            }
+
+            .price-discount {
+                text-decoration: line-through;
+                align-self: flex-end;
+                color: #7d879c;
+                font-weight: 600;
+            }
         }
 
         .seller {
