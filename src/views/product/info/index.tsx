@@ -44,7 +44,7 @@ const Info: React.FC<IInfo> = ({ product }) => {
                     </div>
                 </div>
                 <div className="seller">
-                    Producto vendido en página externa.
+                    Producto vendido en página externa.*
                 </div>
                 <LinkAsButton
                     link={product.link}
@@ -61,6 +61,7 @@ const Info: React.FC<IInfo> = ({ product }) => {
                         }}
                     />
                 </p>
+                <p className='disclaimer'>* Como Afiliados de terceros, Easyshop percibe comisiones con las compras elegibles.</p>
             </div>
         </div>
     ) : (
